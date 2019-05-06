@@ -37,7 +37,7 @@ class Problem1 {
 		System.out.println("Sum of arr3, using recursion:\t" + computeSumRecur(arr3));
 	}
 
-	static int computeSumFor(int[] arr) {
+	private static int computeSumFor(int[] arr) {
 		int sum = 0;
 		for (int i = 0; i < arr.length; i++) {
 			sum += arr[i];
@@ -45,7 +45,7 @@ class Problem1 {
 		return sum;
 	}
 
-	static int computeSumWhile(int[] arr) {
+	private static int computeSumWhile(int[] arr) {
 		int sum = 0;
 		int i = 0;
 		while (i < arr.length) {
@@ -55,7 +55,7 @@ class Problem1 {
 		return sum;
 	}
 
-	static int computeSumRecur(int[] arr) {
+	private static int computeSumRecur(int[] arr) {
 		if (arr.length == 0) {
 			return 0;
 		}
